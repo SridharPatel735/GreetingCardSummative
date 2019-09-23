@@ -68,5 +68,14 @@ namespace GreetingCardSummative.Properties {
                 return ResourceManager.GetStream("Happy", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Yay {
+            get {
+                return ResourceManager.GetStream("Yay", resourceCulture);
+            }
+        }
     }
 }

@@ -90,6 +90,7 @@ namespace GreetingCardSummative
             SolidBrush redBrush = new SolidBrush(Color.Red);
             SolidBrush goldBrush = new SolidBrush(Color.Gold);
             SolidBrush cakeBrush = new SolidBrush(Color.Brown);
+            SolidBrush cakeBrush2 = new SolidBrush(Color.White);
 
             g.Clear(Color.LightBlue);
 
@@ -104,8 +105,33 @@ namespace GreetingCardSummative
             g.FillRectangle(redBrush, 250, 380, 200, 20);
             g.FillRectangle(redBrush, 340, 300, 20, 200);
 
+            //Sound
+            SoundPlayer yaySound = new SoundPlayer(Properties.Resources.Yay);
+            yaySound.Play();
+
             //Cake
             g.FillRectangle(cakeBrush, 275, 205, 150, 75);
+            g.FillRectangle(cakeBrush2, 275, 205, 150, 25);
+            g.FillEllipse(cakeBrush, 270, 225, 10, 55);
+            g.FillEllipse(cakeBrush, 420, 225, 10, 55);
+            g.FillEllipse(cakeBrush2, 275, 195, 150, 20);
+            g.FillEllipse(cakeBrush2, 275, 195, 150, 20);
+            g.FillEllipse(cakeBrush2, 270, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 280, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 290, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 300, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 310, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 320, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 330, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 340, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 350, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 360, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 370, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 380, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 390, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 400, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 410, 205, 10, 30);
+            g.FillEllipse(cakeBrush2, 420, 205, 10, 30);
         }
     }
 }
