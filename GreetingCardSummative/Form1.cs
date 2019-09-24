@@ -93,7 +93,6 @@ namespace GreetingCardSummative
             SolidBrush cakeBrush2 = new SolidBrush(Color.LightBlue);
 
             g.Clear(Color.White);
-
             g.DrawImage(Properties.Resources.polkadots, 0, 0);
 
             //Title
