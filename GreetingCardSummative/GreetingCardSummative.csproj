@@ -86,5 +86,8 @@
   <ItemGroup>
     <None Include="Resources\Yay.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\polkadots.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

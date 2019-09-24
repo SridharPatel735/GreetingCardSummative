@@ -86,18 +86,20 @@ namespace GreetingCardSummative
             //Draw tools
             Graphics g = this.CreateGraphics();
             Font titleFont = new Font("Liberty BT", 50);
-            SolidBrush titleBrush = new SolidBrush(Color.DarkBlue);
+            Pen candlePen = new Pen(Color.Red, 5);
             SolidBrush redBrush = new SolidBrush(Color.Red);
             SolidBrush goldBrush = new SolidBrush(Color.Gold);
             SolidBrush cakeBrush = new SolidBrush(Color.Brown);
-            SolidBrush cakeBrush2 = new SolidBrush(Color.White);
+            SolidBrush cakeBrush2 = new SolidBrush(Color.LightBlue);
 
-            g.Clear(Color.LightBlue);
+            g.Clear(Color.White);
+
+            g.DrawImage(Properties.Resources.polkadots, 0, 0);
 
             //Title
-            g.DrawString("Hope You Have A", titleFont, titleBrush, 20, 20);
+            g.DrawString("Hope You Have A", titleFont, redBrush, 20, 20);
             Thread.Sleep(750);
-            g.DrawString("Joyous Year", titleFont, titleBrush, 20, 70);
+            g.DrawString("Joyous Year", titleFont, redBrush, 20, 70);
             Thread.Sleep(750);
 
             //Present
@@ -108,6 +110,13 @@ namespace GreetingCardSummative
             //Sound
             SoundPlayer yaySound = new SoundPlayer(Properties.Resources.Yay);
             yaySound.Play();
+
+            //Candle
+            g.FillEllipse(goldBrush, 340, 165, 5, 15);
+            g.FillRectangle(redBrush, 340, 175, 5, 40);
+            g.FillEllipse(goldBrush, 360, 165, 5, 10);
+            g.DrawLine(candlePen, 350, 175, 370, 175);
+            g.DrawLine(candlePen, 370, 175, 350, 205);
 
             //Cake
             g.FillRectangle(cakeBrush, 275, 205, 150, 75);
